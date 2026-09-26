@@ -21,7 +21,7 @@ chmod +x filename.sh
 
 ---
 
-## Tech Stack
+## Tools
 
 - awk
 - tee
@@ -30,8 +30,8 @@ chmod +x filename.sh
 - tr
 - case
 - Docker
-- Postgres
-- others...
+- until
+- while
 
 ---
 
