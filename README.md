@@ -6,7 +6,7 @@
 
 🚧 **Currently under development:** 🚧
 
-General purposes automation tools for shells bash, etc...
+General purposes automation tools for shells
 
 ---
 
@@ -14,7 +14,6 @@ General purposes automation tools for shells bash, etc...
 
 ```bash
 git clone https://github.com/gutiluis/Scripts.git
-cd Scripts
 chmod +x filename.sh
 ./filename.sh
 ```
