@@ -13,7 +13,7 @@ General purposes automation tools for shells
 ### How it works
 
 ```bash
-git clone https://github.com/gutiluis/Scripts.git
+git clone https://github.com/gutiluis/bash-toolbox.git
 chmod +x filename.sh
 ./filename.sh
 ```
