@@ -6,7 +6,7 @@
 
 🚧 **Currently under development:** 🚧
 
-General purposes automation tools for shells
+General purpose automation tools for shells
 
 ---
 
