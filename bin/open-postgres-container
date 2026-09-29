@@ -1,21 +1,17 @@
-#!/bin/bash
-# do not use this script in production. only for local dev
+#!/usr/bin/env bash
+
+
+# descr: do not use this script in production. only for local dev
 # -v not used in production
 set -exu
 
-helper_function(){
-    echo "[INFO] open postgres shell from a docker container"
-    echo "[INFO] The image has already been downloaded. open container, and open the shell"
-    echo "can add a verbose flag to set -v but not in production"
-    echo "to use add: filename.sh '--help' or '-h'"
-    echo "end"
-    echo ""
-}
+echo "[INFO] open postgres shell from a docker container"
+echo "[INFO] The image has already been downloaded. open container, and open the shell"
+echo "can add a verbose flag to set -v but not in production"
+echo "to use add: filename.sh '--help' or '-h'"
+echo "end"
+echo ""
 
-if [[ "$1" == "-h" || "$1" == "--help" ]]; then
-    helper_function
-    exit 0
-fi;
 
 logging_info(){
     echo "[INFO] $1"

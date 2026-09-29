@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# run until finds file
+# descr: run until finds file in same working directory
 
 SIGNAL_TO_STOP_FILE="stoploop"
 
