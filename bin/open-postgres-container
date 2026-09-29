@@ -13,19 +13,11 @@ echo "end"
 echo ""
 
 
-logging_info(){
-    echo "[INFO] $1"
-}
-logging_info "has already docker image OR remove it and restart"
-logging_timestamp() {
-  date
-}
-
 echo "[INFO] Removing old container if it exists..."
 docker rm -f pg >/dev/null 2>&1 || true
 
-logging_info "Disable password authentication"
-logging_info "Starting PostgreSQL..."
+echo "Disable password authentication"
+echo "Starting PostgreSQL..."
 docker run -d \
   --name pg \
   -p 5433:5432 \
@@ -39,8 +31,8 @@ until docker exec pg pg_isready -U postgres > /dev/null 2>&1; do
 done
 
 
-logging_timestamp 
-logging_info "[INFO] PostgreSQL is ready"
+ 
+echo "[INFO] PostgreSQL is ready"
 docker exec -it pg psql -U postgres
 
 # do not use the block with set -e exit non zero
